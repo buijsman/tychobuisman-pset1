@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tycho.tychobuisman_pset1.MainActivity">
+
+    <!-- the images for mr potatohead, the body parts are made invisible -->
+    <ImageView
+        android:contentDescription = "@string/body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/body"
+        android:layout_marginTop="-35dip"/>
+    <ImageView android:id="@+id/arms"
+        android:contentDescription = "@string/arms"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arms"
+        android:visibility="invisible"
+        android:layout_marginTop="-25dip"/>
+    <ImageView android:id="@+id/ears"
+        android:contentDescription = "@string/ears"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ears"
+        android:visibility="invisible"
+        android:layout_marginTop="-25dip"/>
+    <ImageView android:id="@+id/eyebrows"
+        android:contentDescription = "@string/eyebrows"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eyebrows"
+        android:visibility="invisible"
+        android:layout_marginTop="-25dip"/>
+    <ImageView android:id="@+id/eyes"
+        android:contentDescription = "@string/eyes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eyes"
+        android:visibility="invisible"
+        android:layout_marginTop="-25dip"/>
+    <ImageView android:id="@+id/glasses"
+        android:contentDescription = "@string/glasses"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/glasses"
+        android:visibility="invisible"
+        android:layout_marginTop="-25dip"/>
+    <ImageView android:id="@+id/hat"
+        android:contentDescription = "@string/hat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hat"
+        android:visibility="invisible"
+        android:layout_marginTop="-25dip"/>
+    <ImageView android:id="@+id/mouth"
+        android:contentDescription = "@string/mouth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mouth"
+        android:visibility="invisible"
+        android:layout_marginTop="-25dip"/>
+    <ImageView android:id="@+id/mustache"
+        android:contentDescription = "@string/mustache"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mustache"
+        android:visibility="invisible"
+        android:layout_marginTop="-25dip"/>
+    <ImageView android:id="@+id/nose"
+        android:contentDescription = "@string/nose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nose"
+        android:visibility="invisible"
+        android:layout_marginTop="-25dip"/>
+    <ImageView android:id="@+id/shoes"
+        android:contentDescription = "@string/shoes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shoes"
+        android:visibility="invisible"
+        android:layout_marginTop="-25dip"/>
+
+    <!-- the checkboxes for the body parts, when checked body part becomes visible -->
+    <CheckBox android:id="@+id/checkboxMustache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mustache"
+        android:layout_marginLeft="200dip"
+        android:layout_marginStart="200dip"
+        android:layout_below="@+id/checkboxMouth" />
+
+    <CheckBox android:id="@+id/checkboxMouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mouth"
+        android:layout_marginLeft="200dip"
+        android:layout_marginStart="200dip"
+        android:layout_below="@+id/checkboxHat" />
+
+    <CheckBox android:id="@+id/checkboxGlasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/glasses"
+        android:layout_marginStart="40dip"
+        android:layout_marginLeft="40dip"
+        android:layout_below="@+id/checkboxEyes" />
+
+    <CheckBox android:id="@+id/checkboxEyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eyes"
+        android:layout_marginStart="40dip"
+        android:layout_marginLeft="40dip"
+        android:layout_below="@+id/checkboxEyebrows" />
+
+    <CheckBox android:id="@+id/checkboxEars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ears"
+        android:layout_marginStart="40dip"
+        android:layout_marginLeft="40dip"
+        android:layout_below="@+id/checkboxArms" />
+
+    <CheckBox android:id="@+id/checkboxArms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arms"
+        android:layout_marginStart="40dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="325dip" />
+
+
+    <CheckBox android:id="@+id/checkboxEyebrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eyebrows"
+        android:layout_marginStart="40dip"
+        android:layout_marginLeft="40dip"
+        android:layout_below="@+id/checkboxEars" />
+
+    <CheckBox android:id="@+id/checkboxShoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shoes"
+        android:layout_marginStart="200dip"
+        android:layout_marginLeft="200dip"
+        android:layout_below="@+id/checkboxNose" />
+
+    <CheckBox android:id="@+id/checkboxNose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nose"
+        android:layout_marginStart="200dip"
+        android:layout_marginLeft="200dip"
+        android:layout_below="@+id/checkboxMustache" />
+
+    <CheckBox android:id="@+id/checkboxHat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hat"
+        android:layout_marginStart="200dip"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="325dip" />
+
+</RelativeLayout>
